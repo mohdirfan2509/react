@@ -3,12 +3,12 @@ import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="flex justify-between">
       <div className="logo-container">
-        <img className="logo" src={LOGO_URL} />
+        <img className="w-50" src={LOGO_URL} />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul className="flex p-1 m-1 bg-pink-50">
           <li>Home</li>
           <li>
             <Link to={"/about"}>About</Link>
