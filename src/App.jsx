@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 
+
 import Header from "./components/Header";
 import Body from "./components/Body";
 import About from "./components/About";
@@ -24,7 +25,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: <Body/>,
       },
       {
         path: "/about",
